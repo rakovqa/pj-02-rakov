@@ -24,6 +24,11 @@ main {
     padding-right: 120px;
 }
 
+footer {
+    min-height: 302px;
+    background-color: #2963A3;
+}
+
 h1{
     margin: 0;
     padding: 0;
@@ -218,7 +223,7 @@ h1{
 
 .hero__article_title {
     margin: 0;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -227,7 +232,7 @@ h1{
 
 .hero__article_author {
     margin: 4px 0px 0px 0px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -236,7 +241,7 @@ h1{
 
 .hero__article_preview {
     margin: 8px 0px 0px 0px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -245,7 +250,7 @@ h1{
 
 .hero__article_date {
     margin-top: auto;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -329,7 +334,7 @@ h1{
 
 .other__article_title {
     margin: 0;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -338,7 +343,7 @@ h1{
 
 .other__article_author {
     margin: 4px 0px 0px 0px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -347,7 +352,7 @@ h1{
 
 .other__article_preview {
     margin: 8px 0px 0px 0px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -356,7 +361,7 @@ h1{
 
 .other__article_date {
     margin-top: auto;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
@@ -373,10 +378,184 @@ h1{
     border-radius: 4px;
     padding: 12px 72.5px;
     color: #FFFFFF;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     border: none;
     cursor: pointer;
+}
+
+/* Подвал основной*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 120px 0px 120px;
+}
+
+.footer__base {
+    display: flex;
+    padding: 0;
+    gap: 91.5px;
+}
+
+/* Подвал основной  меню*/
+
+.footer__base_menu {
+    display: flex;
+    justify-content: space-between;
+    min-height: 184px;
+    min-width: 274px;
+}
+
+.footer__base_menu__list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    row-gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__base_menu__element {
+    list-style: none;
+}
+
+.footer__base_menu__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* Подвал основной подписка*/
+
+.footer__base_sub {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.footer__base_sub__title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer__base form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 384px;
+}
+
+.footer__base_sub__input {
+    margin: 0;
+    position: relative;
+    height: 48px;
+    width: 100%;
+    padding: 14px 52px 14px 16px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(157, 157, 157, 0.2);
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(157, 157, 157, 1);
+}
+
+.footer__base_sub__input:hover {
+    outline: none;
+}
+
+.footer__base_sub__input:focus {
+    outline: none;
+}
+
+.footer__base_sub__button {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    min-height: 48px;
+    width: 64px;
+    background-color: rgba(22, 200, 187, 1);
+    align-items: flex-end;
+}
+
+.footer__base_sub__button_button_img {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+}
+
+.footer__base_sub__agreement {
+    margin: 0;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.25px;
+text-align: left;
+color: rgba(255, 255, 255, 0.7)
+}
+
+/* Подвал основной соц.сети*/
+
+.footer__base_social {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 40px;
+}
+
+.footer__base_social__participant {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+
+.footer__base_social__list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+}
+
+/* Подвал справочная информация */
+
+.footer__reference {
+    margin-top: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 48px;
+    border-top: 1px solid #9D9D9D;
+}
+
+.footer__reference_copyright {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__reference_link {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
 }
